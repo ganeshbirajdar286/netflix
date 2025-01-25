@@ -120,7 +120,7 @@ filter: contrast(5);
 }
 #second-page{
     background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
-height: 370vh;
+height: 400vh;
 width: 100vw;
 color: white;
 display: flex;
@@ -129,7 +129,7 @@ align-items: center;
 }
 .main2{
   
-    height: 370vh;
+    height: 400vh;
     width: 100vw;
      position:absolute;
      background-color: black;
@@ -297,5 +297,13 @@ margin-bottom:20vh;
       }
 }
 
+@media(min-width:1001px){
+    #second-page{
+        height:250vw;
+    }
+    .main2{
+        height:250vw;
+    }
+}
 
 
