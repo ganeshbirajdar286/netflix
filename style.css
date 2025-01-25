@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/netflix/images/bg.jpg");
+
+}
+#nav{
+    height: 10%;
+    width: 100vw;
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+ color: white;
+ 
+}
+.logo{
+    height: 70px;
+    width: 100px;
+    object-fit: cover;
+margin-left: 7vw;
+filter: contrast(5);
+
+}
+#nav-item{
+    margin-right: 10vw;
+}
+.select{
+    padding:10px;
+    width: 7vw;
+   background-color: black;
+   color:white;
+   border: 2px solid white;
+}
+
+#box{
+    height: 100vh;
+    width: 100vw;
+     position:absolute;
+     background-color: black;
+     opacity: 0.7; 
+     z-index: 1;
+}
+.button{
+    height: 5vh;
+    width: 7vw;
+    background-color: red;
+    color:white;
+    border: 2px solid white;
+    font-size: large;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+    color: white;
+ z-index: 2;
+}
+.h1{
+    font-size: 5vw;
+    font-weight: 900;
+}
+.amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size:3vw;
+}
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size:1.7vw;
+  line-height: 100px;
+}
+.button1{
+    height: 8vh;
+    width: 34vw;
+    top: 70vh;
+    left:25vw;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.525); 
+    cursor: pointer;
+    color: white;
+ 
+}
+.button2{
+    height: 8vh;
+    width:10vw;
+    top: 70vh;
+    left:60vw;
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    color:white;
+    font-size:1.3vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+#second-page{
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+height: 370vh;
+width: 100vw;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main2{
+  
+    height: 370vh;
+    width: 100vw;
+     position:absolute;
+     background-color: black;
+     opacity: 0.9; 
+     z-index: 1; 
+    
+     
+}
+.allcard{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    margin-top: 10vh;
+   position: relative;
+    width: 19vw;
+   min-height: 30vh;
+    background-color: rgba(67, 1, 61, 0.797);
+    border:5px solid black ;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card p{
+   margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.card img{
+    margin-top: 30px;
+    float:right;
+    filter: opacity(3);
+}
+.footer{
+    margin-top: 50px;
+}
+.suggestion{
+    margin-top: 40px;
+    margin-left: 10vw;
+    height: 15vh;
+    width:70vw;
+    background-color: rgb(8, 2, 83);
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    border: 6px solid black;
+    cursor: pointer;
+}
+.suggestion1{
+    margin-left: 10vw;
+   min-height:20px;
+    width:70vw;
+    background-color: rgb(8, 2, 83);
+    color: white;
+    font-size: xx-large;
+    border: 6px solid black;
+    display: none;
+    
+}
+
+@media (max-width:400px){
+    .select{
+        width: 22vw;
+    }
+    .button{
+        height: 5vh;
+        width: 22vw;
+    }
+    .h1{
+        
+        font-size: 10vw;
+    }
+
+    .amount{
+        font-size: 5vw;
+    }
+    .description{
+        margin-bottom: 10vw;
+        font-size: 15px;
+       line-height: 20px;
+    }
+    .button1{
+    
+        width: 70vw;
+    }
+    .button2{
+        margin-top: 20vw;
+        width: 40vw;
+        padding: 12vw;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .allcard{
+   display: grid;
+margin-bottom:20vh;
+    }
+    .card{
+        height: 40vh;
+        width: 70vw;
+    }
+    .card h1{
+    font-size: 4vw;
+    }
+   
+}
+
+@media (max-width:800px){
+    .select{
+      width: 12vw;
+    }
+    .button{
+        height: 5vh;
+        width: 22vw;
+    }
+    .h1{
+        
+        font-size: 5vw;
+    }
+
+    .amount{
+        font-size: 5vw;
+    }
+    .description{
+        margin-bottom: 15vw;
+        font-size: 15px;
+       line-height: 20px;
+    }
+    .button1{
+        width:50vw;
+    }
+
+    .button2{
+        margin-left: 15vw;
+        width: 20vw;
+    }
+    .allcard{
+        display: grid;
+     margin-bottom:20vh;
+         }
+         .card{
+             height: 40vh;
+             width: 70vw;
+         }
+         .card h1{
+         font-size: 4vw;
+         }
+}
+@media (max-width:1000px){
+    .select{
+        width: 12vw;
+      }
+      .button{
+          height: 5vh;
+          width: 10vw;
+      }
+}
+
+
+
